@@ -37,7 +37,7 @@
     </nav>
   </header>
   <main class="site-content">
-    <h1 class="site-content__title visually-hidden">Информация о городке Седона, штат Аризона</h1>
+    <h1 class="visually-hidden">Информация о городке Седона, штат Аризона</h1>
     <section class="site-content__banner banner">
       <svg class="banner__img banner-svg" width="458" height="352" viewBox="0 0 458 352">
         <rect class="banner-svg__bg" width="100%" height="100%" fill="rgba(121, 85, 72, 0.3)" />
@@ -47,69 +47,69 @@
       </svg>
     </section>
     <section class="site-content__benefits benefits">
-      <h2 class="benefits__title visually-hidden">Преимущества отдыха в городе Седона</h2>
+      <h2 class="visually-hidden">Преимущества отдыха в городе Седона</h2>
       <p class="benefits__descr">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="benefits__wide-descr">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ul class="benefits__list">
-        <li class="benefits__item benefits-item">
+        <li class="benefits__item benefits-item benefits-item--wide benefits-item--right-bg">
           <h3 class="benefits-item__title">Настоящий городок</h3>
           <p class="benefits-item__descr">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
-        <li class="benefits__item benefits-item">
+        <li class="benefits__item benefits-item benefits-item--wide benefits-item--left-bg">
           <h3 class="benefits-item__title">Там есть Мост дьявола</h3>
           <p class="benefits-item__descr">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </li>
-        <li class="benefits__item benefits-item">
+        <li class="benefits__item benefits-item benefits-item--grey">
           <h3 class="benefits-item__title">Небольшая площадь</h3>
           <p class="benefits-item__descr">Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="benefits__item benefits-item">
+        <li class="benefits__item benefits-item benefits-item--grey">
           <h3 class="benefits-item__title">Красивая дорога</h3>
           <p class="benefits-item__descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="benefits__item benefits-item">
+        <li class="benefits__item benefits-item benefits-item--grey">
           <h3 class="benefits-item__title">Мало туристов</h3>
           <p class="benefits-item__descr">Большинство едет в гранд каньон и толпится там</p>
         </li>
-        <li class="benefits__item benefits-item">
+        <li class="benefits__item benefits-item benefits-item--white benefits-item--hotels">
           <h3 class="benefits-item__title">Жилье</h3>
           <p class="benefits-item__descr">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li class="benefits__item benefits-item">
+        <li class="benefits__item benefits-item benefits-item--white benefits-item--eat">
           <h3 class="benefits-item__title">Еда</h3>
           <p class="benefits-item__descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="benefits__item benefits-item">
+        <li class="benefits__item benefits-item benefits-item--white benefits-item--souvenires">
           <h3 class="benefits-item__title">Сувениры</h3>
           <p class="benefits-item__descr">Не только китайского, но и местного производства!</p>
         </li>
       </ul>
     </section>
     <section class="site-content__search search">
-      <h2 class="search__title">Поиск гостиницы в Седоне</h2>
+      <h2 class="search__title"><a class="search__link" href="hotels.html">Поиск гостиницы в Седоне</a></h2>
       <p class="search__descr">Заинтересовались?</p>
       <p class="search__wide-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <form class="search__form search-form" action="//echo.htmlacademy.ru" method="post">
-        <label class="search-form__label" for="check-in-date">Дата заезда:</label>
-        <input class="search-form__input" id="check-in-date" name="check-in-date" type="text" placeholder="24 апреля 2017">
-        <label class="search-form__label" for="check-out-date">Дата выезда:</label>
-        <input class="search-form__input" id="check-out-date" name="check-out-date" type="text" placeholder="4 июля 2017">
+        <label class="search-form__label">Дата заезда: <input class="search-form__input" name="check-in-date" type="text" placeholder="24 апреля 2017"></label>
+
+        <label class="search-form__label">Дата выезда: <input class="search-form__input" name="check-out-date" type="text" placeholder="4 июля 2017"></label>
+
         <div class="search-form__container">
-          <label class="search-form__label" for="adult-qtty">Взрослые:</label>
-          <input class="search-form__input" id="adult-qtty" name="adult-qtty" type="number" value="2">
-          <label class="search-form__label" for="children-qtty">Дети:</label>
-          <input class="search-form__input" id="children-qtty" name="children-qtty" type="number" value="0">
+          <label class="search-form__label search-form__label--qtty">Взрослые: <input class="search-form__input search-form__input--qtty" name="adult-qtty" type="number" value="2"></label>
+
+          <label class="search-form__label search-form__label--qtty">Дети: <input class="search-form__input search-form__input--qtty" name="children-qtty" type="number" value="0"></label>
+
         </div>
         <button class="search-form__button" type="submit">Найти</button>
       </form>
     </section>
     <section class="site-content__map map">
-      <img class="map_img" src="/img/map.jpg" alt="Наши координаты: 34.86, -111.76" width="1200" height="594">
-      <div class="map_ya-map"></div>
+      <img class="map__img" src="/img/map.jpg" alt="Наши координаты: 34.86, -111.76" width="1200" height="594">
+      <div class="map__ya-map"></div>
     </section>
   </main>
   <footer class="site-footer">
-    <b class="site-footer__hashtag ">#visitsedona</b>
+    <b class="site-footer__hashtag hashtag">#visitsedona</b>
     <ul class="site-footer__socials socials">
       <li class="socials__item">
         <a class="socials__link" href="#">
