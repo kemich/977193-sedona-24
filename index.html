@@ -90,14 +90,43 @@
       <p class="search__descr">Заинтересовались?</p>
       <p class="search__wide-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <form class="search__form search-form" action="//echo.htmlacademy.ru" method="post">
-        <label class="search-form__label">Дата заезда: <input class="search-form__input" name="check-in-date" type="text" placeholder="24 апреля 2017"></label>
-
-        <label class="search-form__label">Дата выезда: <input class="search-form__input" name="check-out-date" type="text" placeholder="4 июля 2017"></label>
-
+        <label class="search-form__label" for="check-in-date">Дата заезда:
+          <input class="search-form__input" name="check-in-date" id="check-in-date" type="text" placeholder="24 апреля 2017">
+        </label>
+        <label class="search-form__label" for="">Дата выезда:
+          <input class="search-form__input" name="check-out-date" id="check-out-date" type="text" placeholder="4 июля 2017">
+        </label>
         <div class="search-form__container">
-          <label class="search-form__label search-form__label--qtty">Взрослые: <input class="search-form__input search-form__input--qtty" name="adult-qtty" type="number" value="2"></label>
-
-          <label class="search-form__label search-form__label--qtty">Дети: <input class="search-form__input search-form__input--qtty" name="children-qtty" type="number" value="0"></label>
+          <div class="search-form__col">
+            <label class="search-form__label search-form__label--qtty" for="adult-qtty">Взрослые:</label>
+            <button class="search-form__qtty-button search-form__qtty-button--minus" type="button">
+              <svg width="11" height="11" viewBox="0 0 100 100">
+                <rect fill="#a9a9a9" x="0" y="40" width="100" height="20" />
+              </svg>
+            </button>
+            <input class="search-form__input search-form__input--qtty" name="adult-qtty" id="adult-qtty" type="number" value="2">
+            <button class="search-form__qtty-button search-form__qtty-button--plus" type="button">
+              <svg width="11" height="11" viewBox="0 0 100 100">
+                <rect fill="#a9a9a9" x="0" y="40" width="100" height="20" />
+                <rect fill="#a9a9a9" x="40" y="0" width="20" height="100" />
+              </svg>
+            </button>
+          </div>
+          <div class="search-form__col">
+            <label class="search-form__label search-form__label--qtty" for="children-qtty">Дети:</label>
+            <button class="search-form__qtty-button search-form__qtty-button--minus" type="button">
+              <svg width="11" height="11" viewBox="0 0 100 100">
+                <rect fill="#a9a9a9" x="0" y="40" width="100" height="20" />
+              </svg>
+            </button>
+            <input class="search-form__input search-form__input--qtty" name="children-qtty" id="children-qtty" type="number" value="0">
+            <button class="search-form__qtty-button search-form__qtty-button--plus" type="button">
+              <svg width="11" height="11" viewBox="0 0 100 100">
+                <rect fill="#a9a9a9" x="0" y="40" width="100" height="20" />
+                <rect fill="#a9a9a9" x="40" y="0" width="20" height="100" />
+              </svg>
+            </button>
+          </div>
 
         </div>
         <button class="search-form__button" type="submit">Найти</button>
