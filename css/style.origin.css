@@ -345,16 +345,50 @@ body {
 
 }
 
+.search-form__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px;
+}
+
+.search-form__col {
+  width: 220px;
+  display: flex;
+
+}
+
+.search-form__button {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  padding: 15px;
+  border: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.search-form__button:hover,
+.search-form__button:focus {
+  background-color: #669ec0;
+}
+
+.search-form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
 .search-form__label {
+  height: 40px;
   margin: 0 0 30px;
   display: flex;
-  justify-content: flex-end;
+  position: relative;
   align-items: center;
-  height: 40px;
 }
 
 .search-form__label--qtty {
-  margin-right: auto;
+  margin: 0 auto 0 0;
 }
 
 .search-form__input {
@@ -367,9 +401,10 @@ body {
   text-transform: uppercase;
   padding: 5px 15px;
   border: 2px solid #f2f2f2;
-  width: 50%;
+  width: 350px;
   box-sizing: border-box;
   margin-left: auto;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .search-form__input::placeholder {
@@ -401,6 +436,16 @@ body {
   -webkit-appearance: none;
 }
 
+.search-form__calendar-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+
 .search-form__qtty-button {
   width: 40px;
   height: 40px;
@@ -410,54 +455,21 @@ body {
   background-color: #f2f2f2;
 }
 
-.search-form__qtty-button:hover svg rect,
-.search-form__qtty-button:focus svg rect {
+.search-form__qtty-button rect,
+.search-form__calendar-button path {
+  transition: fill 0.3s;
+}
+
+.search-form__qtty-button:hover rect,
+.search-form__qtty-button:focus rect,
+.search-form__calendar-button:hover path,
+.search-form__calendar-button:focus path {
   fill: #000000;
 }
 
-.search-form__qtty-button:active svg rect {
+.search-form__qtty-button:active rect,
+.search-form__calendar-button:active path {
   fill: #81b3d2;
-}
-
-.search-form__qtty-button--plus {}
-
-.search-form__qtty-button--minus {}
-
-.search-form__container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.search-form__col {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.search-form__col:nth-child(2n) {
-  padding-left: 15px;
-}
-
-.search-form__button {
-  color: #ffffff;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-  background-color: #81b3d2;
-  padding: 15px;
-  border: none;
-  transition: color 0.3s, background-color 0.3s;
-}
-
-.search-form__button:hover,
-.search-form__button:focus {
-  background-color: #669ec0;
-}
-
-.search-form__button:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #5496bd;
 }
 
 .map {}
