@@ -37,6 +37,7 @@
     event.preventDefault();
     if (searchForm.classList.contains("search-form--show")) {
       searchForm.classList.remove("search-form--show");
+      searchForm.classList.remove("search-form--error");
       inputs[0].focus();
     } else {
       searchForm.classList.add("search-form--show");
@@ -48,6 +49,7 @@
       event.preventDefault();
       if (searchForm.classList.contains("search-form--show")) {
         searchForm.classList.remove("search-form--show");
+        searchForm.classList.remove("search-form--error");
 
         inputs[0].focus();
       } else {
