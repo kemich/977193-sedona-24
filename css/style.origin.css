@@ -511,8 +511,16 @@ body {
   fill: #81b3d2;
 }
 
-.map_img {
+.map {
+  height: 594px;
+}
+
+.map__img {
   vertical-align: middle;
+}
+
+.map__img--hidden {
+  display: none;
 }
 
 .filter {
