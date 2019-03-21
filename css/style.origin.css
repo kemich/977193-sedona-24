@@ -367,6 +367,10 @@ body {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
+.search-form--hidden {
+  display: none;
+}
+
 .search-form__row {
   display: flex;
   justify-content: space-between;

@@ -86,10 +86,10 @@
       </ul>
     </section>
     <section class="site-content__search search">
-      <h2 class="search__title"><a class="search__link" href="hotels.html">Поиск гостиницы в Седоне</a></h2>
+      <h2 class="search__title"><a class="search__link js-search-form-trigger" href="hotels.html">Поиск гостиницы в Седоне</a></h2>
       <p class="search__descr">Заинтересовались?</p>
       <p class="search__wide-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <form class="search__form search-form" action="//echo.htmlacademy.ru" method="post">
+      <form class="search__form search-form search-form--hidden js-search-form" action="//echo.htmlacademy.ru" method="post">
 
         <label class="search-form__label" for="check-in-date">Дата заезда:
           <input class="search-form__input" name="check-in-date" id="check-in-date" type="text" placeholder="24 апреля 2017">
@@ -144,8 +144,8 @@
       </form>
     </section>
     <section class="site-content__map map">
-      <img class="map__img" src="img/map.jpg" alt="Наши координаты: 34.86, -111.76" width="1200" height="594">
-      <div class="map__ya-map"></div>
+      <img class="map__img js-img-map" src="img/map.jpg" alt="Наши координаты: 34.86, -111.76" width="1200" height="594">
+      <div class="map__ya-map" id="ya-map"></div>
     </section>
   </main>
   <footer class="site-footer">
@@ -185,6 +185,8 @@
       </a>
     </b>
   </footer>
+  <script src="https://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
