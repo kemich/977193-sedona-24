@@ -48,6 +48,7 @@
       event.preventDefault();
       if (searchForm.classList.contains("search-form--show")) {
         searchForm.classList.remove("search-form--show");
+
         inputs[0].focus();
       } else {
         searchForm.classList.add("search-form--show");
