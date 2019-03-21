@@ -511,6 +511,500 @@ body {
   vertical-align: middle;
 }
 
+.filter {
+  padding: 30px;
+
+  background-image: url(../img/filter_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.filter-form {
+  display: flex;
+}
+
+.filter-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px 0 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter-form__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.filter-form__legend {
+  margin: 0 0 30px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-form__label {
+  position: relative;
+
+  margin: 0 0 20px;
+  padding: 0 0 0 40px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  transition: opacity 0.3s;
+}
+
+.filter-form__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/icons/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.filter-form__checkbox:checked + .filter-form__label::before {
+  background-image: url(../img/icons/checkbox-on.svg);
+}
+
+.filter-form__checkbox:disabled + .filter-form__label::before {
+  opacity: 0.3;
+}
+
+.filter-form__label:hover,
+.filter-form__checkbox:focus + .filter-form__label {
+  opacity: 0.6;
+}
+
+.filter-form__label:active {
+  opacity: 1;
+}
+
+.range-filter {
+  width: 300px;
+  margin: 0;
+}
+
+.range-filter__values {
+  display: flex;
+  margin: 0 0 30px;
+
+  border: 2px solid #ffffff;
+}
+
+.range-filter__label {
+  width: 50%;
+  padding: 5px 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  border-right: 2px solid #ffffff;
+}
+
+.range-filter__label:last-child {
+  border-right: none;
+}
+
+.range-filter__input {
+  width: 50px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+
+  -moz-appearance: textfield;
+}
+
+.range-filter__input::-webkit-outer-spin-button,
+.range-filter__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+
+.range-filter-scroll__scale {
+  position: relative;
+
+  height: 2px;
+  margin: 15px 10px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-filter-scroll__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 75%;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.range-filter-scroll__button {
+  position: absolute;
+  top: -10px;
+
+  width: 20px;
+  height: 22px;
+
+  background-color: transparent;
+  background-image: url(../img/icons/filter-button.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+.range-filter-scroll__button--left {
+  left: -10px;
+}
+
+.range-filter-scroll__button--right {
+  right: -10px;
+}
+
+.range-filter-scroll__button--left:hover,
+.range-filter-scroll__button--left:focus {
+  top: -11px;
+  left: -11px;
+
+  width: 22px;
+  height: 24px;
+}
+
+.range-filter-scroll__button--right:hover,
+.range-filter-scroll__button--right:focus {
+  top: -11px;
+  right: -11px;
+
+  width: 22px;
+  height: 24px;
+}
+
+.filter-form__button {
+  align-self: center;
+  padding: 5px 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.filter-form__button:hover,
+.filter-form__button:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.sort {
+  display: flex;
+  margin: 30px 0 30px 155px;
+
+  text-transform: uppercase;
+}
+
+.sort__title {
+  margin: 0 40px 0 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.sort__link {
+  margin: 0 40px 0 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+}
+
+.sort__link:hover,
+.sort__link:focus {
+  color: #81b3d2;
+
+  border-color: #81b3d2;
+}
+
+.sort__link:active {
+  color: #000000;
+
+  border-color: #000000;
+}
+
+.sort__link:hover path,
+.sort__link:focus path {
+  fill: #000000;
+}
+
+.sort__link:active path {
+  fill: #81b3d2;
+}
+
+.sort__link--active {
+  color: #81b3d2;
+
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort__link--active path {
+  fill: #81b3d2;
+}
+
+.sort__link--low-to-high {
+  margin: 0 10px 0 auto;
+
+  border-color: transparent;
+}
+
+.sort__link--high-to-low {
+  margin: 0;
+
+  border-color: transparent;
+}
+
+.sort__link--high-to-low:hover,
+.sort__link--high-to-low:focus,
+.sort__link--high-to-low:active,
+.sort__link--low-to-high:hover,
+.sort__link--low-to-high:focus,
+.sort__link--low-to-high:active {
+  border-color: transparent;
+}
+
+.hotels {
+  position: relative;
+}
+
+.hotels__qtty {
+  position: absolute;
+  top: -55px;
+  left: 0;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.hotels__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.hotels-item {
+  display: flex;
+  padding: 30px 0;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.hotels-item:last-child {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.hotels-item__img {
+  margin-right: 20px;
+}
+
+.hotels-item__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hotels-item__row {
+  display: flex;
+  align-items: center;
+}
+
+.hotels-item__title {
+  margin: 0 20px 0 0;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.hotels-item__title-link {
+  color: #000000;
+  text-decoration: none;
+
+  transition: color 0.3s;
+}
+
+.hotels-item__title-link:hover,
+.hotels-item__title-link:focus {
+  color: #81b3d2;
+}
+
+.hotels-item__title-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotels-item__type {
+  min-width: 120px;
+  margin: 0 20px 0 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotels-item__star-lvl {
+  display: block;
+  width: 100px;
+  height: 20px;
+  margin-left: auto;
+
+  font-size: 0;
+
+  background-image: url(../img/icons/star.svg);
+  background-position: right;
+  background-size: 20px 20px;
+}
+
+.hotels-item__star-lvl-1 {
+  width: 20px;
+}
+
+.hotels-item__star-lvl-2 {
+  width: 40px;
+}
+
+.hotels-item__star-lvl-3 {
+  width: 60px;
+}
+
+.hotels-item__star-lvl-4 {
+  width: 80px;
+}
+
+.hotels-item__star-lvl-5 {
+  width: 100px;
+}
+
+.hotels-item__raiting {
+  margin-left: auto;
+  padding: 5px 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+
+  background-color: #f2f2f2;
+}
+
+.hotels-item__price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotels-item__link {
+  box-sizing: border-box;
+  min-width: 120px;
+  margin: 0 20px 0 0;
+  padding: 5px 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #81b3d2;
+
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.hotels-item__link:hover,
+.hotels-item__link:focus {
+  background-color: #669ec0;
+}
+
+.hotels-item__link:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.hotels-item__book {
+  padding: 5px 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #766357;
+
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.hotels-item__book:hover,
+.hotels-item__book:focus {
+  background-color: #604e43;
+}
+
+.hotels-item__book:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
 .hashtag {
   width: 300px;
 
