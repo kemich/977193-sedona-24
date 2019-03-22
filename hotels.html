@@ -12,15 +12,15 @@
   <link rel="stylesheet" href="css/style.origin.css">
 </head>
 
-<body>
-  <header class="site-header">
-    <nav class="site-header__nav">
-      <div class="site-header__logo logo">
+<body class="site">
+  <header class="site__header header">
+    <nav class="header__nav">
+      <div class="header__logo logo">
         <a class="logo__link" href="index.html">
           <img class="logo__img" src="img/logo-sedona.svg" alt="Логотип пректа Седона" width="140" height="72">
         </a>
       </div>
-      <ul class="site-header__main-menu main-menu">
+      <ul class="header__main-menu main-menu">
         <li class="main-menu__item">
           <a class="main-menu__link" href="#">Информация</a>
         </li>
@@ -36,9 +36,9 @@
       </ul>
     </nav>
   </header>
-  <main class="site-content">
-    <h1 class="site-content__title visually-hidden">Поиск гостиниц в городке Седона, штат Аризона</h1>
-    <section class="site-content__filter filter">
+  <main class="site__content content">
+    <h1 class="visually-hidden">Поиск гостиниц в городке Седона, штат Аризона</h1>
+    <section class="content__filter filter">
       <h2 class="visually-hidden">Фильтр подбора</h2>
       <form class="filter__form filter-form" action="//echo.htmlacademy.ru" method="get">
         <fieldset class="filter-form__fieldset">
@@ -85,7 +85,7 @@
         </div>
       </form>
     </section>
-    <section class="site-content__sort sort">
+    <section class="content__sort sort">
       <h2 class="sort__title">Сортировка:</h2>
       <a class="sort__link sort__link--active" href="#">По цене</a>
       <a class="sort__link" href="#">По типу</a>
@@ -99,7 +99,7 @@
           <path fill="#cacaca" d="M5.5 10L0 0h11" /></svg>
       </a>
     </section>
-    <section class="site-content__hotels hotels">
+    <section class="content__hotels hotels">
       <h2 class="visually-hidden">Список гостинниц</h2>
       <b class="hotels__qtty">Найдено: 3</b>
       <ul class="hotels__list">
@@ -160,9 +160,9 @@
       </ul>
     </section>
   </main>
-  <footer class="site-footer">
-    <b class="site-footer__hashtag hashtag">#visitsedona</b>
-    <ul class="site-footer__socials socials">
+  <footer class="site__footer footer">
+    <b class="footer__hashtag hashtag">#visitsedona</b>
+    <ul class="footer__socials socials">
       <li class="socials__item">
         <a class="socials__link" href="#">
           <svg class="socials__img socials-svg" width="50" height="50" viewBox="0 0 30 30">
@@ -188,7 +188,7 @@
         </a>
       </li>
     </ul>
-    <b class="site-footer__copyright copyright">
+    <b class="footer__copyright copyright">
       Website by
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
         <svg class="copyright__img copyright-svg" width="109" height="37" viewBox="0 0 109 37">
