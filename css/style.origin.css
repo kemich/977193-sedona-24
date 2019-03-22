@@ -276,73 +276,8 @@ html {
   margin: 0;
 }
 
-.search {
-  display: flex;
-  flex-direction: column;
-  width: 550px;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  color: #333333;
-  text-transform: uppercase;
-}
-
-.search__title {
-  order: 1;
-  margin: 0;
-
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  color: #ffffff;
-}
-
-.search__link {
-  display: block;
-  padding: 30px;
-
-  color: #ffffff;
-  text-decoration: none;
-
-  background-color: #766357;
-
-  transition: color 0.3s, background-color 0.3s;
-}
-
-.search__link:hover,
-.search__link:focus {
-  background-color: #604e43;
-}
-
-.search__link:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  background-color: #503e33;
-}
-
-.search__descr {
-  margin: 0 0 30px;
-
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-}
-
-.search__wide-descr {
-  margin: 0 0 30px;
-}
-
-.search__form {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 10;
-}
-
 .search-form {
-  display: none;
+  display: flex;
   flex-direction: column;
   order: 2;
   box-sizing: border-box;
@@ -358,16 +293,6 @@ html {
 
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-}
-
-.search-form--show {
-  display: flex;
-
-  animation: bounce 0.6s;
-}
-
-.search-form--error {
-  animation: shake 0.6s;
 }
 
 .search-form__container {
@@ -511,6 +436,82 @@ html {
 .search-form__qtty-button:active rect,
 .search-form__calendar-button:active path {
   fill: #81b3d2;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.search__title {
+  order: 1;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.search__link {
+  display: block;
+  padding: 30px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #766357;
+
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.search__link:hover,
+.search__link:focus {
+  background-color: #604e43;
+}
+
+.search__link:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.search__descr {
+  margin: 0 0 30px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.search__wide-descr {
+  margin: 0 0 30px;
+}
+
+.search__form {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+
+.search__form--show {
+  display: flex;
+
+  animation: bounce 0.6s;
+}
+
+.search__form--error {
+  animation: shake 0.6s;
 }
 
 .map {

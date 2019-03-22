@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  document.querySelector(".js-img-map").classList.add("map__img--hidden");
+  document.querySelector(".map__img").classList.add("map__img--hidden");
 
   ymaps.ready(init);
 
@@ -29,31 +29,31 @@
 
   var searchForm, searchFormTrigger, inputs;
 
-  searchForm = document.querySelector(".js-search-form");
-  searchFormTrigger = document.querySelector(".js-search-form-trigger");
+  searchForm = document.querySelector(".search__form");
+  searchFormTrigger = document.querySelector(".search__link");
   inputs = searchForm.querySelectorAll("[name]");
 
   searchFormTrigger.addEventListener("click", function (event) {
     event.preventDefault();
-    if (searchForm.classList.contains("search-form--show")) {
-      searchForm.classList.remove("search-form--show");
-      searchForm.classList.remove("search-form--error");
+    if (searchForm.classList.contains("search__form--show")) {
+      searchForm.classList.remove("search__form--show");
+      searchForm.classList.remove("search__form--error");
       inputs[0].focus();
     } else {
-      searchForm.classList.add("search-form--show");
+      searchForm.classList.add("search__form--show");
     }
   }, false);
 
   window.addEventListener("keydown", function (event) {
     if (event.keyCode === 27) {
       event.preventDefault();
-      if (searchForm.classList.contains("search-form--show")) {
-        searchForm.classList.remove("search-form--show");
-        searchForm.classList.remove("search-form--error");
+      if (searchForm.classList.contains("search__form--show")) {
+        searchForm.classList.remove("search__form--show");
+        searchForm.classList.remove("search__form--error");
 
         inputs[0].focus();
       } else {
-        searchForm.classList.add("search-form--show");
+        searchForm.classList.add("search__form--show");
       }
     }
   }, false);
@@ -64,9 +64,9 @@
       input = inputs[i];
       if (!input.value) {
         event.preventDefault();
-        searchForm.classList.remove("search-form--error");
+        searchForm.classList.remove("search__form--error");
         searchForm.offsetWidth;
-        searchForm.classList.add("search-form--error");
+        searchForm.classList.add("search__form--error");
         input.focus();
       }
     }
